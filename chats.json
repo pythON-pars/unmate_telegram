@@ -1,0 +1,14 @@
+[
+  {
+    "ID": <chat id in int>,
+    "name": "chat_name"
+  }
+  {
+    "ID": <chat id in int>,
+    "name": "chat_name"
+  },
+  {
+    "ID": <chat id in int>,
+    "name": "chat_name"
+  }
+]
