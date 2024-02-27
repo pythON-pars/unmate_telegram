@@ -4,10 +4,10 @@ from pyrogram.raw.functions.account import UpdateNotifySettings
 from pyrogram.raw.types import InputNotifyPeer, InputPeerNotifySettings
 
 from datetime import datetime
-from time import sleep
-
 from getpass import getpass
 from json import load
+
+from get_lists import ret_chatdata
 
 api_id = int(getpass(prompt="ID: "))
 api_hash = getpass(prompt="HASH: ")
@@ -35,6 +35,8 @@ async def disable_notify(chat_id: int, app: Client, minutse: int = 10) -> None:
     ))
 
 if __name__ == '__main__':
+    # result = asyncio.run(ret_chatdata(api_id=21024465, api_hash="0ed505b1ca9597af065690f787fbe8cc"))
+
     print("\nStart\n")
     count_day = 0
 
